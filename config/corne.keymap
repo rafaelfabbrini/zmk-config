@@ -90,6 +90,26 @@
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
         };
+
+        workspace_up {
+            bindings = <&kp LG(PAGE_UP)>;
+            key-positions = <3 4>;
+        };
+
+        workspace_down {
+            bindings = <&kp LG(PAGE_DOWN)>;
+            key-positions = <4 5>;
+        };
+
+        tab_previous {
+            bindings = <&kp LC(PAGE_UP)>;
+            key-positions = <15 16>;
+        };
+
+        tab_next {
+            bindings = <&kp LC(PAGE_DOWN)>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {
