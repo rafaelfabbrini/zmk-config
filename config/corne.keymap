@@ -110,6 +110,30 @@
             bindings = <&kp LC(PAGE_DOWN)>;
             key-positions = <16 17>;
         };
+
+        workspace_shift_up {
+            bindings = <&kp LG(LS(PAGE_UP))>;
+            key-positions = <4 5>;
+            layers = <1>;
+        };
+
+        workspace_shift_down {
+            bindings = <&kp LG(LS(PAGE_DOWN))>;
+            key-positions = <3 2>;
+            layers = <1>;
+        };
+
+        tab_shift_previous {
+            bindings = <&kp LC(PAGE_UP)>;
+            key-positions = <15 16>;
+            layers = <1>;
+        };
+
+        tab_shift_next {
+            bindings = <&kp LC(PAGE_DOWN)>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
     };
 
     keymap {
