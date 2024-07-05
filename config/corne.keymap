@@ -113,12 +113,12 @@
 
         workspace_shift_up {
             bindings = <&kp LG(LS(PAGE_UP))>;
-            key-positions = <4 5 37>;
+            key-positions = <4 37 3>;
         };
 
         workspace_shift_down {
             bindings = <&kp LG(LS(PAGE_DOWN))>;
-            key-positions = <3 2 37>;
+            key-positions = <37 4 5>;
         };
 
         tab_shift_previous {
