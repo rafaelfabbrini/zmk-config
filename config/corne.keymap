@@ -51,33 +51,30 @@
         open-parenthesis {
             bindings = <&kp LPAR>;
             key-positions = <8 9>;
-            layers = <0>;
         };
 
         close-parenthesis {
             bindings = <&kp RPAR>;
             key-positions = <10 9>;
-            layers = <0>;
         };
 
         open-brackets {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <20 21>;
-            layers = <0>;
         };
 
         close-brackets {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp BSLH>;
             key-positions = <22 21>;
         };
 
         open-braces {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <32 33>;
         };
 
         close-braces {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp PIPE>;
             key-positions = <33 34>;
         };
 
@@ -130,6 +127,16 @@
             bindings = <&kp LC(LS(PAGE_DOWN))>;
             key-positions = <16 17 37>;
         };
+
+        back {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <6 7>;
+        };
+
+        forward {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <7 8>;
+        };
     };
 
     keymap {
@@ -158,10 +165,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans        &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &trans       &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &kp LGUI      &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml NUMBER_6 LSHFT  &trans       &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &trans       &trans   &trans  &trans  &trans  &trans  &trans
-                                          &trans               &trans               &kp SPACE    &kp RET  &trans  &trans
+&trans  &kp PLUS         &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &kp ASTERISK    &kp EXCLAMATION   &kp AT_SIGN     &kp HASH      &kp DOLLAR  &kp PERCENT  &trans
+&trans  &hml LGUI MINUS  &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml LSHFT NUMBER_6  &kp SLASH       &kp QUESTION      &kp AMPERSAND   &kp ASTERISK  &trans      &trans       &trans
+&trans  &kp NUMBER_0     &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp EQUAL       &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp CARET     &kp TILDE   &trans       &trans
+                                             &trans               &trans               &kp SPACE       &kp RET           &trans          &trans
             >;
         };
 
@@ -173,10 +180,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT           &kp HASH          &kp DLLR         &kp PRCNT    &trans   &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &kp LGUI  &hml LALT MINUS  &hml LCTRL CARET  &hml LSHFT AMPS  &kp BSLH     &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans    &kp UNDER        &kp PLUS          &trans           &kp PIPE     &trans   &trans          &trans          &trans           &trans  &trans
-                                   &trans            &mo 3            &kp SPACE    &kp RET  &trans          &trans
+&trans  &trans  &kp F1        &kp F2         &kp F3         &kp F10      &kp DOUBLE_QUOTES  &kp LC(SLASH)   &kp UP_ARROW    &kp LC(NON_US_BSLH)  &kp LC(LEFT_BRACKET)     &trans
+&trans  &trans  &hml LALT F4  &hml LCTRL F5  &hml LSHFT F6  &kp F11      &kp SINGLE_QUOTE   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp RS(LC(TILDE))        &trans
+&trans  &trans  &kp F7        &kp F8         &kp F9         &kp F12      &kp HASH           &kp SLASH       &kp UNDER       &kp MINUS            &kp LS(LC(NON_US_BSLH))  &trans
+                              &trans         &mo 3          &kp SPACE    &kp RET            &trans          &trans
             >;
         };
 
@@ -185,7 +192,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp PG_UP      &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans         &trans   &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+                        &trans  &trans  &trans    &trans  &mo 2     &trans
             >;
         };
     };
