@@ -175,10 +175,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PLUS         &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &kp ASTERISK     &kp EXCLAMATION    &kp AT_SIGN            &kp HASH             &kp DOLLAR        &kp PERCENT           &trans
-&trans  &hml LGUI MINUS  &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml LSHFT NUMBER_6  &kp KP_DIVIDE    &kp LS(KP_DIVIDE)  &hmr RSHIFT AMPERSAND  &hmr RCTRL ASTERISK  &kp BACKSLASH     &kp PIPE2             &trans
-&trans  &kp NUMBER_0     &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp EQUAL        &kp LEFT_BRACKET   &kp LEFT_BRACE         &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH  &trans
-                                             &trans               &trans               &kp SPACE        &kp RET            &trans                 &trans
+&trans  &kp PLUS         &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &kp ASTERISK     &kp EXCLAMATION   &kp AT_SIGN            &kp HASH             &kp DOLLAR        &kp PERCENT           &trans
+&trans  &hml LGUI MINUS  &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml LSHFT NUMBER_6  &kp KP_DIVIDE    &kp LS(SLASH)     &hmr RSHIFT AMPERSAND  &hmr RCTRL ASTERISK  &kp SLASH         &kp PIPE2             &trans
+&trans  &kp NUMBER_0     &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp EQUAL        &kp LEFT_BRACKET  &kp LEFT_BRACE         &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH  &trans
+                                             &trans               &trans               &kp SPACE        &kp RET           &trans                 &trans
             >;
         };
 
