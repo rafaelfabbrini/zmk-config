@@ -147,6 +147,21 @@
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <19 20>;
         };
+
+        volume-up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <0 12>;
+        };
+
+        volume-down {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <12 24>;
+        };
+
+        mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <24 25>;
+        };
     };
 
     keymap {
@@ -175,10 +190,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PLUS         &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &kp ASTERISK     &kp EXCLAMATION   &kp AT_SIGN            &kp HASH             &kp DOLLAR        &kp PERCENT           &trans
-&trans  &hml LGUI MINUS  &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml LSHFT NUMBER_6  &kp KP_DIVIDE    &kp LS(SLASH)     &hmr RSHIFT AMPERSAND  &hmr RCTRL ASTERISK  &kp SLASH         &kp PIPE2             &trans
-&trans  &kp NUMBER_0     &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp EQUAL        &kp LEFT_BRACKET  &kp LEFT_BRACE         &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH  &trans
-                                             &trans               &trans               &kp SPACE        &kp RET           &trans                 &trans
+&trans  &kp PLUS         &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &kp ASTERISK    &kp EXCLAMATION   &kp AT_SIGN            &kp HASH             &kp DOLLAR  &kp PERCENT    &trans
+&trans  &hml LGUI MINUS  &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml LSHFT NUMBER_6  &kp SLASH       &kp QUESTION      &hmr RSHIFT AMPERSAND  &hmr RCTRL ASTERISK  &kp SEMI    &kp PIPE       &trans
+&trans  &kp NUMBER_0     &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp EQUAL       &kp LEFT_BRACKET  &kp GRAVE              &kp CARET            &kp TILDE   &kp BACKSLASH  &trans
+                                             &kp PRINTSCREEN      &trans               &kp SPACE       &kp RET           &kp INSERT             &kp K_CALCULATOR
             >;
         };
 
@@ -190,10 +205,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp F1        &kp F2         &kp F3         &kp F10      &kp TILDE         &kp LC(KP_DIVIDE)      &kp UP_ARROW           &kp LC(NON_US_BSLH)    &kp LC(LEFT_BRACKET)            &trans
-&trans  &trans  &hml LALT F4  &hml LCTRL F5  &hml LSHFT F6  &kp F11      &kp SINGLE_QUOTE  &hmr RSHFT LEFT_ARROW  &hmr RCTRL DOWN_ARROW  &hmr LALT RIGHT_ARROW  &hmr LGUI RS(LC(SINGLE_QUOTE))  &trans
-&trans  &trans  &kp F7        &kp F8         &kp F9         &kp F12      &kp HASH          &kp QUESTION           &kp UNDER              &kp MINUS              &kp LS(LC(LEFT_BRACKET))        &trans
-                              &trans         &mo 3          &kp SPACE    &kp RET           &trans                 &trans
+&trans  &trans  &kp F1        &kp F2         &kp F3         &kp F10      &kp DOUBLE_QUOTES  &kp LC(SLASH)          &kp UP_ARROW           &kp LC(NON_US_BSLH)    &kp LC(LEFT_BRACKET)            &trans
+&trans  &trans  &hml LALT F4  &hml LCTRL F5  &hml LSHFT F6  &kp F11      &kp SINGLE_QUOTE   &hmr RSHFT LEFT_ARROW  &hmr RCTRL DOWN_ARROW  &hmr LALT RIGHT_ARROW  &hmr LGUI LC(LS(SINGLE_QUOTE))  &trans
+&trans  &trans  &kp F7        &kp F8         &kp F9         &kp F12      &kp HASH           &kp COLON              &kp UNDER              &kp MINUS              &kp LS(LC(LEFT_BRACKET))        &trans
+                              &kp CAPSLOCK   &mo 3          &kp SPACE    &kp RET            &trans                 &trans
             >;
         };
 
