@@ -59,22 +59,22 @@
         };
 
         open-brackets {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <20 21>;
         };
 
         close-brackets {
-            bindings = <&kp BSLH>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 21>;
         };
 
         open-braces {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp LEFT_BRACE>;
             key-positions = <32 33>;
         };
 
         close-braces {
-            bindings = <&kp PIPE>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <33 34>;
         };
 
@@ -149,17 +149,17 @@
         };
 
         volume-up {
-            bindings = <&kp C_VOLUME_UP>;
+            bindings = <&kp K_VOLUME_UP>;
             key-positions = <0 12>;
         };
 
         volume-down {
-            bindings = <&kp C_VOLUME_DOWN>;
+            bindings = <&kp K_VOLUME_DOWN>;
             key-positions = <12 24>;
         };
 
         mute {
-            bindings = <&kp C_MUTE>;
+            bindings = <&kp K_MUTE>;
             key-positions = <24 25>;
         };
     };
@@ -193,7 +193,7 @@
 &trans  &kp PLUS         &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3         &kp ASTERISK    &kp EXCLAMATION   &kp AT_SIGN            &kp HASH             &kp DOLLAR  &kp PERCENT    &trans
 &trans  &hml LGUI MINUS  &hml LALT NUMBER_4  &hml LCTRL NUMBER_5  &hml LSHFT NUMBER_6  &kp SLASH       &kp QUESTION      &hmr RSHIFT AMPERSAND  &hmr RCTRL ASTERISK  &kp SEMI    &kp PIPE       &trans
 &trans  &kp NUMBER_0     &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp EQUAL       &kp LEFT_BRACKET  &kp GRAVE              &kp CARET            &kp TILDE   &kp BACKSLASH  &trans
-                                             &kp PRINTSCREEN      &trans               &kp SPACE       &kp RET           &kp INSERT             &kp K_CALCULATOR
+                                             &kp PRINTSCREEN      &trans               &kp SPACE       &kp RET           &mo 3                  &kp K_CALCULATOR
             >;
         };
 
@@ -208,7 +208,7 @@
 &trans  &trans  &kp F1        &kp F2         &kp F3         &kp F10      &kp DOUBLE_QUOTES  &kp LC(SLASH)          &kp UP_ARROW           &kp LC(NON_US_BSLH)    &kp LC(LEFT_BRACKET)            &trans
 &trans  &trans  &hml LALT F4  &hml LCTRL F5  &hml LSHFT F6  &kp F11      &kp SINGLE_QUOTE   &hmr RSHFT LEFT_ARROW  &hmr RCTRL DOWN_ARROW  &hmr LALT RIGHT_ARROW  &hmr LGUI LC(LS(SINGLE_QUOTE))  &trans
 &trans  &trans  &kp F7        &kp F8         &kp F9         &kp F12      &kp HASH           &kp COLON              &kp UNDER              &kp MINUS              &kp LS(LC(LEFT_BRACKET))        &trans
-                              &kp CAPSLOCK   &mo 3          &kp SPACE    &kp RET            &trans                 &trans
+                              &kp CAPSLOCK   &mo 3          &kp SPACE    &kp RET            &trans                 &kp INSERT
             >;
         };
 
@@ -217,7 +217,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp PG_UP      &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans         &trans   &trans  &trans
-                        &trans  &trans  &trans    &trans  &mo 2     &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
