@@ -51,116 +51,139 @@
         open-parenthesis {
             bindings = <&kp LPAR>;
             key-positions = <8 9>;
+            timeout-ms = <20>;
         };
 
         close-parenthesis {
             bindings = <&kp RPAR>;
             key-positions = <10 9>;
+            timeout-ms = <20>;
         };
 
         open-brackets {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <20 21>;
+            timeout-ms = <20>;
         };
 
         close-brackets {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 21>;
+            timeout-ms = <20>;
         };
 
         open-braces {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <32 33>;
+            timeout-ms = <20>;
         };
 
         close-braces {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <33 34>;
+            timeout-ms = <20>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
+            timeout-ms = <20>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
+            timeout-ms = <20>;
         };
 
         workspace_up {
             bindings = <&kp LG(PAGE_UP)>;
             key-positions = <3 4>;
+            timeout-ms = <20>;
         };
 
         workspace_down {
             bindings = <&kp LG(PAGE_DOWN)>;
             key-positions = <4 5>;
+            timeout-ms = <20>;
         };
 
         tab_previous {
             bindings = <&kp LC(PAGE_UP)>;
             key-positions = <15 16>;
+            timeout-ms = <20>;
         };
 
         tab_next {
             bindings = <&kp LC(PAGE_DOWN)>;
             key-positions = <16 17>;
+            timeout-ms = <20>;
         };
 
         workspace_shift_up {
             bindings = <&kp LG(LS(PAGE_UP))>;
             key-positions = <4 37 3>;
+            timeout-ms = <20>;
         };
 
         workspace_shift_down {
             bindings = <&kp LG(LS(PAGE_DOWN))>;
             key-positions = <37 4 5>;
+            timeout-ms = <20>;
         };
 
         tab_shift_previous {
             bindings = <&kp LC(LS(PAGE_UP))>;
             key-positions = <15 16 37>;
+            timeout-ms = <20>;
         };
 
         tab_shift_next {
             bindings = <&kp LC(LS(PAGE_DOWN))>;
             key-positions = <16 17 37>;
+            timeout-ms = <20>;
         };
 
         move-window-left {
             bindings = <&kp LG(LS(LEFT_ARROW))>;
             key-positions = <6 7>;
+            timeout-ms = <20>;
         };
 
         move-window-right {
             bindings = <&kp LS(LG(RIGHT_ARROW))>;
             key-positions = <7 8>;
+            timeout-ms = <20>;
         };
 
         back {
             bindings = <&kp LA(LEFT_ARROW)>;
             key-positions = <18 19>;
+            timeout-ms = <20>;
         };
 
         forward {
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <19 20>;
+            timeout-ms = <20>;
         };
 
         volume-up {
-            bindings = <&kp K_VOLUME_UP2>;
+            bindings = <&kp LS(LA(LC(LG(Q))))>;
             key-positions = <0 12>;
+            timeout-ms = <20>;
         };
 
         volume-down {
-            bindings = <&kp K_VOLUME_DOWN2>;
+            bindings = <&kp LS(LA(LC(LG(A))))>;
             key-positions = <12 24>;
+            timeout-ms = <20>;
         };
 
         mute {
-            bindings = <&kp K_MUTE2>;
+            bindings = <&kp LS(LA(LC(LG(Z))))>;
             key-positions = <24 25>;
+            timeout-ms = <20>;
         };
     };
 
