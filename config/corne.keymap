@@ -45,7 +45,7 @@
             bindings = <&kp ESC>;
             key-positions = <1 2>;
             layers = <0>;
-            timeout-ms = <50>;
+            timeout-ms = <20>;
         };
 
         open-parenthesis {
@@ -149,17 +149,17 @@
         };
 
         volume-up {
-            bindings = <&kp K_VOLUME_UP>;
+            bindings = <&kp K_VOLUME_UP2>;
             key-positions = <0 12>;
         };
 
         volume-down {
-            bindings = <&kp K_VOLUME_DOWN>;
+            bindings = <&kp K_VOLUME_DOWN2>;
             key-positions = <12 24>;
         };
 
         mute {
-            bindings = <&kp K_MUTE>;
+            bindings = <&kp K_MUTE2>;
             key-positions = <24 25>;
         };
     };
