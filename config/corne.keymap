@@ -188,13 +188,13 @@
 
         move-window-up {
             bindings = <&kp LS(LG(UP_ARROW))>;
-            key-positions = <23 11>;
+            key-positions = <10 22>;
             timeout-ms = <20>;
         };
 
         move-window-down {
             bindings = <&kp LS(LG(DOWN_ARROW))>;
-            key-positions = <23 35>;
+            key-positions = <22 34>;
             timeout-ms = <20>;
         };
     };
