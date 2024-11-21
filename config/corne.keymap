@@ -212,7 +212,7 @@
             bindings = <
 &trans  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U            &kp I         &kp O        &kp P           &trans
 &trans  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H    &hmr LSHFT J     &hmr LCTRL K  &hmr LALT L  &hmr LGUI SEMI  &trans
-&trans  &hml RALT Z  &kp X        &kp C         &kp V         &kp B        &kp N    &kp M            &kp COMMA     &kp DOT      &kp FSLH        &trans
+&trans  &hml RALT Z  &kp X        &kp C         &kp V         &kp B        &kp N    &kp M            &kp COMMA     &kp DOT      &kp LA(TAB)     &trans
                                   &kp LGUI      &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
