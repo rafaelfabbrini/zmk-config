@@ -36,6 +36,13 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <39 40 41 0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 3>;
         };
+
+        dsat: dsat {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE SUPER ALT TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI>, <&kp LA(TAB)>;
+        };
     };
 
     combos {
@@ -213,7 +220,7 @@
 &trans  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U            &kp I         &kp O        &kp P           &trans
 &trans  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H    &hmr LSHFT J     &hmr LCTRL K  &hmr LALT L  &hmr LGUI SEMI  &trans
 &trans  &hml RALT Z  &kp X        &kp C         &kp V         &kp B        &kp N    &kp M            &kp COMMA     &kp DOT      &kp LA(TAB)     &trans
-                                  &kp LGUI      &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp DELETE
+                                  &dsat         &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
