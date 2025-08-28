@@ -257,10 +257,10 @@
 
         big-nav {
             bindings = <
-&trans  &bt BT_SEL 0  &trans  &kp KP_NUMBER_8  &trans  &trans    &trans  &trans    &kp PG_UP      &trans   &trans  &trans
-&trans  &bt BT_SEL 1  &trans  &kp KP_NUMBER_5  &trans  &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans
-&trans  &bt BT_CLR    &trans  &kp KP_NUMBER_2  &trans  &trans    &trans  &trans    &trans         &trans   &trans  &trans
-                              &trans           &trans  &trans    &trans  &trans    &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 2  &kp KP_NUMBER_8  &trans  &trans    &trans  &trans    &kp PG_UP      &trans   &trans  &trans
+&trans  &bt BT_SEL 1  &bt BT_SEL 3  &kp KP_NUMBER_5  &trans  &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans
+&trans  &bt BT_CLR    &bt BT_SEL 4  &kp KP_NUMBER_2  &trans  &trans    &trans  &trans    &trans         &trans   &trans  &trans
+                                    &trans           &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
