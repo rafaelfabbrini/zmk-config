@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -256,10 +257,10 @@
 
         big-nav {
             bindings = <
-&trans  &trans  &trans  &kp KP_NUMBER_8  &trans  &trans    &trans  &trans    &kp PG_UP      &trans   &trans  &trans
-&trans  &trans  &trans  &kp KP_NUMBER_5  &trans  &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans
-&trans  &trans  &trans  &kp KP_NUMBER_2  &trans  &trans    &trans  &trans    &trans         &trans   &trans  &trans
-                        &trans           &trans  &trans    &trans  &trans    &trans
+&bt BT_NXT  &trans  &trans  &kp KP_NUMBER_8  &trans  &trans    &trans  &trans    &kp PG_UP      &trans   &trans  &trans
+&trans      &trans  &trans  &kp KP_NUMBER_5  &trans  &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &trans
+&trans      &trans  &trans  &kp KP_NUMBER_2  &trans  &trans    &trans  &trans    &trans         &trans   &trans  &trans
+                            &trans           &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
